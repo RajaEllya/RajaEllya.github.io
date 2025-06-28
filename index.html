@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="
+    width=device-width, initial-scale= 1.0">
+    <title> Ellya's Website </title>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" type="image/jpg" href="ellya.jpg">
+  
+  </head>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: white;
+      text-align: center;
+    }
+
+    nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  background-color: #800000;
+  height: 60px;
+  position: relative;
+}
+
+nav .nav-left ul,
+nav .nav-right ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav .nav-left li,
+nav .nav-right li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.nav-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Brush Script MT', cursive;
+  font-size: 28px;
+  color: white;
+  font-weight: bold;
+}
+  
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: white;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-family: 'Pacifico', cursive;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+} 
+.hero-content p {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.site-footer {
+  width: 100%;
+  background-color: #f7c6d2;
+  color: #800000;
+  padding: 60px 0;
+  font-family: 'Pacifico', cursive;
+  font-size: 18px;
+  position: relative;
+  bottom: 0;
+}
+.footer-right{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: right;
+  padding-right: 30px;
+}
+.footer-year{
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  margin: 0;
+  margin-top: 5px;
+}
+.footer-content .footer-text {
+  display: inline-block;
+  text-align: right;
+  line-height: 1.2;
+}
+html,body{
+  margin: 0;
+  height: 100%;
+  padding: 0;
+  padding-bottom: 50px; /* Prevent footer from overlapping content */
+}
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+}
+.music-player {
+  display: flex;
+  align-items: center;
+  background-color: #f5b6d4;
+  border-radius: 25px;
+  padding: 25px;
+  color: #222;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  gap: 30px;
+  max-width: 900px;
+}
+
+.album-art {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 15px;
+  background-color: white;
+  flex-shrink: 0;
+}
+
+.song-section {
+  flex: 1;
+}
+
+.song-info h2 {
+  margin: 5px 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.song-info p {
+  margin: 0;
+  font-size: 15px;
+  color: #444;
+}
+
+.controls {
+  display: flex;
+  justify-content: start;
+  margin: 20px 0;
+  gap: 20px;
+}
+
+.controls button {
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.suggested {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.suggested img {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.suggested img:hover {
+  transform: scale(1.1);
+}
+  </style>
+</head>
+
+<body>
+<div class="wrapper">
+      <div class="content">
+
+  <nav>
+    <div class="nav-left">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about-me-new.html">About Me</a></li>
+      <li><a href="contact-new.html">Contact</a></li>
+    </ul>
+  </div>
+  <div class="nav-center">Eyes of Ellya</div>
+ <div class="nav-right"></div>
+</nav>
+
+<section class="hero">
+  <video autoplay muted loop playsinline>
+    <source src="ellyavid2.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="hero-content">
+    <h1>Eyes of Ellya</h1>
+    <p>By Raja Ellya</p>
+  </div>
+</section>
+  
+
+    <!--Second division-->
+    <img src="image1.png" style="height:600px; margin:100px;
+       float: left;" alt="A pretend invisible person wearing a hat, glasses, and
+      coat." />
+    <div id="seconddivision" style="height:600px; margin:100px;">
+    <br>
+    <h1 style="font-family: 'Pacifico', cursive; font-size: 40px; color: #800000;">Hello, readers!</h1>
+
+
+
+    <p style="line-height: 1.5; font-size:20px;text-align: justify;"> — Welcome to the one place where everything revolves around me.
+    This space is more than just a website. It’s a personal reflection of who I am, thoughtfully put together to share my story with you. Here, you’ll find a glimpse into my background, the path I’ve taken through education, and the hobbies that add color to my everyday life.</p>
+  
+      <p style="line-height: 1.5; font-size:20px;text-align: justify;">It’s a little collection of the things that matter to me, from what has shaped me, to what continues to inspire me. Whether you’re here out of curiosity or just passing through, I hope you find something that speaks to you, even in the smallest way.</p>
+
+      <p style="line-height: 1.0; font-size:20px;text-align: justify;">Take a look around, you're officially invited into my world.<a
+      <br> 
+      <p style="line-height: 1.0; font-size:20px;text-align: justify;">With love, Ellya.<a
+
+      <div style="clear:both;"></div>
+    </div>
+<div style="display: flex; flex-direction: column; align-items: center; padding: 40px;">
+  <h1 style="font-size: 36px; margin-bottom: 30px;">Favorite Song of The Month!</h1>
+  <div class="music-player">
+  <img id="album-art" src="album-cover1.jpg" alt="Album Cover" class="album-art">
+
+  <div class="song-section">
+    <div class="song-info">
+      <h2 id="song-title">West Coast Love</h2>
+      <p id="artist-name">Emotional Oranges</p>
+    </div>
+
+    <div class="controls">
+      <button onclick="prevSong()">⏮</button>
+      <button>⏸</button>
+      <button onclick="nextSong()">⏭</button>
+    </div>
+
+    <div class="suggested">
+      <img src="suggest1.jpg" alt="Suggest 1">
+      <img src="suggest2.png" alt="Suggest 2">
+      <img src="suggest3.jpg" alt="Suggest 3">
+      <img src="album-cover1.jpg" alt="Suggest 4">
+    </div>
+  </div>
+</div>
+
+  </div>
+</div>
+
+</div>
+<script>
+  const songs = [
+    {
+      image: "suggest1.jpg",
+      title: "Hysteric Glamour",
+      artist: "Tabber"
+    },
+    {
+      image: "suggest2.png",
+      title: "Territorial",
+      artist: "Kali Uchis"
+    },
+    {
+      image: "suggest3.jpg",
+      title: "Enough for you",
+      artist: "Wisp"
+    },
+    {
+     image: "album-cover1.jpg",
+     title: "West Coast Love",
+     artist: "Emotional Oranges"
+    }
+  ];
+
+  let currentIndex = 0;
+
+  function updatePlayer(index) {
+    const albumArt = document.getElementById("album-art");
+    albumArt.src = songs[index].image;
+    document.getElementById("song-title").textContent = songs[index].title;
+    document.getElementById("artist-name").textContent = songs[index].artist;
+
+    if (
+      songs[index].title === "West Coast Love" ||
+      songs[index].title === "Enough for you"
+    ) {
+      albumArt.style.objectFit = "contain";
+    } else {
+      albumArt.style.objectFit = "cover";
+    }
+  }
+
+  function nextSong() {
+    currentIndex = (currentIndex + 1) % songs.length;
+    updatePlayer(currentIndex);
+  }
+
+  function prevSong() {
+    currentIndex = (currentIndex - 1 + songs.length) % songs.length;
+    updatePlayer(currentIndex);
+  }
+
+  updatePlayer(currentIndex); // ini akan load lagu pertama masa buka page
+</script>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+  <div class="footer-left">EYES of ELLYA</div>
+  <div class="footer-right">2025</div>
+</div>
+</footer>
+</body>
+
+
+
+  
